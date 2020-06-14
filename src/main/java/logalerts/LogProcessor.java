@@ -36,8 +36,13 @@ public class LogProcessor {
         users.add(user4.getUserName());
         users.add(user5.getUserName());
 
-        subscriptionMapper.put("critical", users);
+        subscriptionMapper.put("Critical", users);
+        LogLevelConfig logLevelConfig = new LogLevelConfig()
+                .setLogDuration(100)
+                .setLogFrequency(10)
+                .setLogWaitTime(100);
 
+        logLevelConfigMap.put("Critical", logLevelConfig);
     }
 
 }

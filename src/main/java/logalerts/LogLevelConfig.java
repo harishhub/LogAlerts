@@ -16,39 +16,44 @@ public class LogLevelConfig
         return logFrequency;
     }
 
-    public void setLogFrequency(int logFrequency) {
+    public LogLevelConfig setLogFrequency(int logFrequency) {
         this.logFrequency = logFrequency;
+        return this;
     }
 
     public long getLogWaitTime() {
         return logWaitTime;
     }
 
-    public void setLogWaitTime(long logWaitTime) {
+    public LogLevelConfig setLogWaitTime(long logWaitTime) {
         this.logWaitTime = logWaitTime;
+        return this;
     }
 
     public long getLogDuration() {
         return logDuration;
     }
 
-    public void setLogDuration(long logDuration) {
+    public LogLevelConfig setLogDuration(long logDuration) {
         this.logDuration = logDuration;
+        return this;
     }
     public long getLastSeenTime() {
         return lastSeenTime;
     }
 
-    public void setLastSeenTime(long lastSeenTime) {
+    public LogLevelConfig setLastSeenTime(long lastSeenTime) {
         this.lastSeenTime = lastSeenTime;
+        return this;
     }
 
     public long getLogCount() {
         return logCount;
     }
 
-    public void setLogCount(long logCount) {
+    public LogLevelConfig setLogCount(long logCount) {
         this.logCount = logCount;
+        return this;
     }
 
 }
